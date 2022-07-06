@@ -1,0 +1,384 @@
+h1, h2, h3, h4, h5, h6, p, a, ul, li, input, button, label, body {
+  font-family: Kalame;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: white; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+h4 {
+  font-size: 48px; }
+
+body {
+  background-color: black; }
+
+.text-primary {
+  color: #e32652 !important; }
+
+.btn-primary {
+  background-color: #e32652 !important;
+  border-color: #e32652 !important; }
+
+.btn-secondary {
+  background-color: #272c33 !important;
+  border-color: #272c33 !important; }
+
+input.bg-secondary {
+  color: white !important; }
+
+.bg-secondary {
+  background-color: #191c21 !important;
+  border-color: #191c21 !important; }
+
+section {
+  margin-bottom: 50px; }
+  section > img {
+    width: 100%; }
+
+.separator {
+  height: 5px;
+  width: 18px;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 20px; }
+
+.watch-now {
+  background-color: transparent;
+  color: white;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: 0.3s all; }
+
+.watch-now:hover {
+  box-shadow: inset 0 0 0 1px white; }
+
+.see-all {
+  font-size: 18px;
+  margin-right: 8px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  z-index: 1; }
+  header .info {
+    display: flex; }
+    header .info .categories {
+      display: flex;
+      align-items: center; }
+      header .info .categories .category-toggle {
+        display: flex;
+        cursor: pointer;
+        user-select: none; }
+    header .info .menu-overlay {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      background-color: #191c21;
+      padding: 1em 2em;
+      z-index: 9999; }
+      header .info .menu-overlay.open {
+        display: block; }
+      header .info .menu-overlay ul {
+        padding-top: 1em;
+        border-bottom: 1px solid #272c33;
+        border-top: 1px solid #272c33; }
+        header .info .menu-overlay ul li {
+          font-size: 20px;
+          margin-bottom: 0.75em; }
+          header .info .menu-overlay ul li .input-group {
+            border: 1px solid #272c33 !important;
+            padding: 0.25em 0.5em; }
+            header .info .menu-overlay ul li .input-group input {
+              margin: 0 !important;
+              padding: 0;
+              box-shadow: none; }
+      header .info .menu-overlay .close {
+        text-align: left;
+        padding-bottom: 1em; }
+        header .info .menu-overlay .close img {
+          cursor: pointer;
+          user-select: none; }
+    header .info .menu img {
+      cursor: pointer;
+      user-select: none; }
+
+section.introduce {
+  margin-top: 50px; }
+  section.introduce > img {
+    width: 100%; }
+  section.introduce > .text {
+    padding: 1em; }
+    section.introduce > .text h1 {
+      text-align: center;
+      font-size: 48px; }
+    section.introduce > .text > p {
+      text-align: center;
+      font-size: 22px;
+      margin-bottom: 20px; }
+    section.introduce > .text form.subscribe {
+      margin-bottom: 20px; }
+      section.introduce > .text form.subscribe input {
+        padding: 12px 16px; }
+
+section.last-course {
+  position: relative;
+  padding: 1em; }
+  section.last-course h3 {
+    text-align: center;
+    margin-bottom: 20px; }
+  section.last-course img {
+    border-radius: 8px; }
+  section.last-course .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, transparent 50%, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; }
+    section.last-course .overlay .teacher {
+      margin-bottom: 20px; }
+
+section.trending {
+  padding: 1em;
+  display: flex;
+  flex-direction: column; }
+  section.trending .title {
+    margin-bottom: 10px; }
+  section.trending .splide {
+    margin-bottom: 30px;
+    position: relative; }
+    section.trending .splide .splide__track {
+      padding-right: 0 !important; }
+      section.trending .splide .splide__track .splide__slide img {
+        border-radius: 10px;
+        width: 100%; }
+    section.trending .splide:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100%;
+      background-image: linear-gradient(to left, transparent, black);
+      z-index: 1; }
+  section.trending .more-courses {
+    align-self: center; }
+
+section.incoming {
+  padding: 1em; }
+  section.incoming .title {
+    margin-bottom: 20px; }
+  section.incoming .splide {
+    direction: ltr; }
+    section.incoming .splide .splide__slide {
+      position: relative; }
+      section.incoming .splide .splide__slide img {
+        border-radius: 10px;
+        width: 100%; }
+      section.incoming .splide .splide__slide .overlay {
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1em;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right; }
+        section.incoming .splide .splide__slide .overlay span {
+          text-align: right; }
+
+section.download {
+  padding: 1em; }
+  section.download > img {
+    width: 100%;
+    margin-bottom: 10px; }
+  section.download h3 {
+    margin-bottom: 30px; }
+  section.download ul {
+    margin-bottom: 30px; }
+    section.download ul li {
+      display: flex;
+      align-items: center; }
+  section.download .links img {
+    display: inline-block;
+    margin: 10px; }
+
+section.at-work {
+  padding: 1em;
+  background-color: #191c21; }
+  section.at-work .info h3 {
+    margin: 20px 0;
+    text-align: center; }
+  section.at-work .info p {
+    text-align: center;
+    margin-bottom: 20px; }
+
+section.members {
+  padding: 1em; }
+  section.members h3 {
+    text-align: center;
+    margin-bottom: 30px; }
+  section.members .splide {
+    direction: ltr; }
+    section.members .splide .splide__slide img {
+      width: 100%;
+      border-radius: 10px 10px 0 0; }
+    section.members .splide .splide__slide .info {
+      background-color: #191c21;
+      padding: 1.5em;
+      direction: rtl;
+      border-radius: 0 0 10px 10px; }
+      section.members .splide .splide__slide .info > p {
+        margin-bottom: 1em; }
+
+section.analytics {
+  padding: 1em; }
+  section.analytics .box {
+    width: 100%;
+    padding: 1em 0;
+    background: #191c21;
+    margin: 1em 0;
+    border-radius: 8px;
+    text-align: center; }
+    section.analytics .box span:first-child {
+      font-size: 28px; }
+
+section.classes {
+  text-align: center; }
+  section.classes .categories .category {
+    position: relative; }
+    section.classes .categories .category input[type=checkbox] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 1; }
+      section.classes .categories .category input[type=checkbox]:checked ~ .square:before {
+        width: 6px; }
+      section.classes .categories .category input[type=checkbox]:checked ~ .square::after {
+        width: 10px; }
+      section.classes .categories .category input[type=checkbox]:checked ~ .category-box {
+        background-color: #191c21;
+        border: none; }
+    section.classes .categories .category .square {
+      width: 20px;
+      height: 20px;
+      background-color: #191c21;
+      position: absolute;
+      left: 32px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 3px;
+      border: 1px solid #272c33;
+      z-index: 2; }
+      section.classes .categories .category .square:before {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: white;
+        transform: rotate(45deg);
+        position: absolute;
+        left: 3px;
+        top: 50%;
+        transition: width 0.2s ease-in-out; }
+      section.classes .categories .category .square:after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: white;
+        transform: rotate(-45deg);
+        position: absolute;
+        left: 6px;
+        top: 50%;
+        transition: width 0.3s ease-in-out 0.2s; }
+    section.classes .categories .category .category-box {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid #596170;
+      margin: 1em;
+      border-radius: 5px;
+      position: relative; }
+      section.classes .categories .category .category-box p {
+        margin-right: 1em;
+        font-size: 20px; }
+
+section.send-classes {
+  text-align: center;
+  padding: 1em; }
+  section.send-classes form {
+    text-align: right !important; }
+    section.send-classes form button[type=submit] {
+      margin-top: 1em; }
+
+section.faq {
+  padding: 1em; }
+  section.faq .accordion-item {
+    background-color: #191c21;
+    margin-bottom: 1em; }
+    section.faq .accordion-item .accordion-button {
+      background-color: #191c21;
+      color: white;
+      position: relative; }
+      section.faq .accordion-item .accordion-button:after {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        position: absolute;
+        left: 1em; }
+
+footer {
+  padding: 2em 1em 1em 1em;
+  border-top: 1px solid #596170; }
+  footer .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    footer .links h3 {
+      margin-bottom: 1em; }
+    footer .links li {
+      margin: 0.75em 0; }
+  footer .socials {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em; }
+  footer .actions {
+    text-align: center;
+    margin-bottom: 2em; }
+    footer .actions img {
+      margin: 0.5em; }
+  footer .end-section {
+    text-align: center; }
+    footer .end-section > div {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+/*# sourceMappingURL=main.css.map */

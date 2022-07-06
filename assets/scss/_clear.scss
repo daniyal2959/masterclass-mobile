@@ -1,0 +1,83 @@
+h1, h2, h3, h4, h5, h6, p, a, ul, li, input, button, label, body{
+    font-family: Kalame;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+h4{
+    font-size: 48px;
+}
+
+body{
+    background-color: $primary;
+}
+
+.text-primary{
+    color: $secondary!important;
+}
+
+.btn-primary{
+    background-color: $secondary!important;
+    border-color: $secondary!important;
+}
+
+.btn-secondary{
+    background-color: $btn-secondary!important;
+    border-color: $btn-secondary!important;
+}
+
+input{
+    &.bg-secondary{
+        color: white!important;
+    }
+}
+
+.bg-secondary{
+    background-color: $third!important;
+    border-color: $third!important;
+}
+
+section{
+    margin-bottom: 50px;
+
+    > img{
+        width: 100%;
+    }
+}
+
+.separator{
+    height: 5px;
+    width: 18px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.watch-now{
+    background-color: transparent;;
+    color: white;
+    box-shadow: $btn-border;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: $transition;
+}
+
+.watch-now:hover{
+    box-shadow: $btn-border-hover;
+}
+
+.see-all{
+    font-size: 18px;
+    margin-right: 8px;
+}

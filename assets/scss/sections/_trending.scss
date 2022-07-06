@@ -1,0 +1,41 @@
+section.trending{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+    .title{
+        margin-bottom: 10px;
+    }
+
+    .splide{
+        margin-bottom: 30px;
+        position: relative;
+
+        .splide__track{
+            padding-right: 0!important;
+
+            .splide__slide{
+
+                img{
+                    border-radius: 10px;
+                    width: 100%;
+                }
+            }
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100%;
+            background-image: linear-gradient(to left, transparent, black);
+            z-index: 1;
+        }
+    }
+
+    .more-courses{
+        align-self: center;
+    }
+}
